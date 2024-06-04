@@ -1,0 +1,180 @@
+
+   @import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        height: 100vh;
+    }
+    .header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        position: relative; /* Ensure relative positioning for absolute positioning */
+    }
+    .nav-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 20px; /* Adjust the right position as needed */
+        background-color: crimson;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+
+    /*Category Button*/
+    .category-btn {
+        transition: all 0.3s ease-in-out;
+        font-family: "Dosis", sans-serif;
+      }
+      
+      .category-btn {
+        width: 150px;
+        height: 60px;
+        border-radius: 50px;
+        background-image: linear-gradient(135deg, #feb692 0%, #ea5455 100%);
+        box-shadow: 0 20px 30px -6px rgba(238, 103, 97, 0.5);
+        outline: none;
+        cursor: pointer;
+        border: none;
+        font-size: 24px;
+        color: white;
+      }
+      
+      .category-btn {
+        transform: translateY(3px);
+        box-shadow: none;
+      }
+      
+      .category-btn:active {
+        opacity: 0.5;
+      }
+
+
+
+
+    .content {
+        flex: 1;
+        background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        flex-basis: 70%;
+    }
+    .item {
+        flex: 1 1 250px;
+        width: 5in;
+        border-radius: 5px;
+        background-color: gray;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .item img {
+        width: 100%;
+        height: 3in;
+        border-radius: 5px 5px 0 0;
+    }
+    .item-info {
+        padding: 10px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .quantity-control {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .quantity-btn {
+        padding: 9px;
+        background-color: #60f977;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 0 5px;
+    }
+    input[type="number"] {
+        width: 40px;
+        text-align: center;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        padding: 5px;
+    }
+    
+    /* Styling for the dashboard */
+    .dashboard {
+        flex-basis: 25%;
+        height: 500px; /* Fixed height */
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        overflow-y: auto; /* Make it scrollable when content overflows */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center items horizontally */
+    }
+    .dashboard h2 {
+        margin-top: 0;
+        text-align: center;
+    }
+    .selected-items-list {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 20px; /* Add margin to create space between list and button */
+    }
+    .selected-items-list li {
+        margin-bottom: 5px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 5px;
+    }
+    .order-btn-container {
+        margin-top: auto; /* Push the container to the bottom of the dashboard */
+    }
+    .order-btn {
+        padding: 10px 20px;
+        background-color: crimson;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .item-name{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-weight: bold;
+        font-size: x-large;
+    }
+
+
+#Receipt{
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    font-size:20px;
+    font-style:italic;
+   
+}
